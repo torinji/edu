@@ -13,17 +13,15 @@ resource "aws_instance" "web" {
 
 #	Install python
 
-  provisioner "local-exec" {
-    command = "sudo apt update && sudo apt -y install python"
-  }
-
-#	Check when instance can connect
   provisioner "remote-exec" {
-    inline = ["echo Successfully connected"]
+    inline = [
+      "sudo apt update",
+      "sudo apt -y upgrade",
+      "sudo apt -y install python2.7",
+    ]
     connection {
       private_key = "${file(var.private_key_path)}"
       user = "ubuntu"
     }
   }
-
 }
