@@ -1,9 +1,9 @@
 variable "aws_access_key" {
-  default = "AKIAI2VVUIGY327IY2FQ"
+  default = "aws access key"
 }
 
 variable "aws_secret_key" {
-  default = "1MDYYNnj81sF2iIaXkrnXyZerYQlE50HLbJnR+ba"
+  default = "here aws secret key"
 }
 
 variable "aws_region" {
@@ -19,14 +19,17 @@ variable "amis" {
 }
 
 variable "public_key_path" {
-  default = "/home/azher/edu/.ssh/aws_key.pub"
+  default = "here/path/to/ssh public key"
 }
 
 variable "private_key_path" {
-  default = "/home/azher/edu/.ssh/aws_key"
+  default = "here/path/to/ssh private key"
 }
 
 
 variable "key_name" {
   default = "aws_key"
 }
+
+variable "access_ip" {
+  default = "here IP for access to aws-instance"

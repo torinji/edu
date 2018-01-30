@@ -1,0 +1,7 @@
+users_team:
+ - { user: 'testuser', shell: '/bin/bash', group: 'sudo', home: '/var/www', ssh_pub: 'here public key for user'}
+soft:
+ - sudo
+ - mc
+ - iftop
+ - tcpdump

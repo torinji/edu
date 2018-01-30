@@ -1,6 +1,8 @@
 # Create a VPC to launch our instances into
 resource "aws_vpc" "task1_vpc" {
   cidr_block = "172.31.0.0/16"
+  enable_dns_support = true
+  enable_dns_hostnames = true
 }
 
 resource "aws_internet_gateway" "task1_gw" {
@@ -23,12 +25,12 @@ resource "aws_security_group" "sg1" {
   name        = "terraform_sg"
   vpc_id      = "${aws_vpc.task1_vpc.id}"
 
-  # SSH access from work
+  # SSH access from need IP
   ingress {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["194.44.181.195/32"]
+    cidr_blocks = ["${vars.access_ip}"]
   }
 
   # HTTP access from anywhere
