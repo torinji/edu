@@ -1,4 +1,4 @@
 output "address" {
-  value = "${aws_instance.task1.public_ip}"
+  value = "${aws_instance.web.public_ip}"
 }
 

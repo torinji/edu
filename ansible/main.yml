@@ -1,7 +1,7 @@
 - hosts: all
-  vars_files:
-    - vars/global.yml
   user: ubuntu
+  become: true
   roles:
     - preconf
     - nginx
+    - php_fpm

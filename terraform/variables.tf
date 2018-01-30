@@ -1,11 +1,3 @@
-variable "aws_access_key" {
-  default = "aws access key"
-}
-
-variable "aws_secret_key" {
-  default = "here aws secret key"
-}
-
 variable "aws_region" {
   description = "EC2 Region for the VPC"
   default = "us-east-2"
@@ -19,11 +11,11 @@ variable "amis" {
 }
 
 variable "public_key_path" {
-  default = "here/path/to/ssh public key"
+  default = "../ssh/aws_key.pub"
 }
 
 variable "private_key_path" {
-  default = "here/path/to/ssh private key"
+  default = "../ssh/aws_key"
 }
 
 
@@ -32,4 +24,5 @@ variable "key_name" {
 }
 
 variable "access_ip" {
-  default = "here IP for access to aws-instance"
+  default = "194.44.181.195/32"
+}

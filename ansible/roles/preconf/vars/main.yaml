@@ -1,0 +1,5 @@
+soft:
+ - sudo
+ - mc
+ - iftop
+ - tcpdump
