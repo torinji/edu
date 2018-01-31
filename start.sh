@@ -27,7 +27,7 @@ cd ../terraform
 terraform output
 
 # exit
-rm /tmp/inventory.tmp
+#rm /tmp/inventory.tmp
 exit 0
 
 

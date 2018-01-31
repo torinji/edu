@@ -11,17 +11,15 @@ resource "aws_instance" "web" {
   vpc_security_group_ids = ["${aws_security_group.sgweb.id}"]
   key_name = "${var.key_name}"
 
-#	Install python
+#	Check ssh connection
 
   provisioner "remote-exec" {
     inline = [
-      "sudo apt update",
-      "sudo apt -y upgrade",
-      "sudo apt -y install python2.7",
+      "echo instance ready for Ansible"
     ]
     connection {
       private_key = "${file(var.private_key_path)}"
-      user = "ubuntu"
+      user = "${var.user}"
     }
   }
 }

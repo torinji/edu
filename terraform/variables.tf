@@ -6,7 +6,7 @@ variable "aws_region" {
 variable "amis" {
   description = "AMIs by region"
   default = {
-    us-east-2 = "ami-2581aa40"
+     us-east-2 = "ami-f0f8d695"
   }
 }
 
@@ -25,4 +25,8 @@ variable "key_name" {
 
 variable "access_ip" {
   default = "194.44.181.195/32"
+}
+
+variable "user" {
+  default = "ubuntu"
 }
