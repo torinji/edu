@@ -1,0 +1,22 @@
+test file
+clear.sh
+.ssh/
+ssh/*
+Training plan.docx
+*.tf
+bk_Dockerfile
+test10.1/*
+applicationHost.config
+
+# terraform
+.terraform/
+*.tfstate*
+*.tfstate.backup
+*.tfvars
+
+# ansible
+secrets.yml
+*.retry
+task1/ssh/*
+
+

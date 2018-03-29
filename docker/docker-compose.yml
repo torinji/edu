@@ -1,0 +1,13 @@
+version: "2"
+services:
+  reactjs_app:
+    build:
+      context: ./reactjs
+    ports:
+      - "4100:4100"
+  golang_app:
+    build:
+      context: ./golang    
+    ports:
+      - "8080:8080"
+    
