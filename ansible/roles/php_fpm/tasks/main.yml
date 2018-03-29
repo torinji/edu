@@ -1,7 +1,0 @@
----
-
-- name: Install PHP-FPM
-  apt: name="{{ item }}"
-  with_items:
-    - "{{ php_soft }}"
-  notify: restart php-fpm

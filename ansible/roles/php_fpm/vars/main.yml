@@ -1,4 +1,0 @@
-php_fpm_service_name: 
-  - php7.0-fpm
-php_soft:
-  - php7.0-fpm
