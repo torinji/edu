@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 test file
 clear.sh
 .ssh/
@@ -8,6 +9,11 @@ bk_Dockerfile
 bash_task/test10.1/*
 applicationHost.config
 
+=======
+#test file
+clear.sh
+ssh/*
+>>>>>>> bdea02a9e19a0a7e020c9b3a053547909b33c636
 # terraform
 .terraform/
 *.tfstate*
@@ -16,7 +22,11 @@ applicationHost.config
 
 # ansible
 secrets.yml
+<<<<<<< HEAD
 *.retry
 task1/ssh/*
 
 
+=======
+*.retry
+>>>>>>> bdea02a9e19a0a7e020c9b3a053547909b33c636
