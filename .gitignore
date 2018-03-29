@@ -5,7 +5,7 @@ ssh/*
 Training plan.docx
 *.tf
 bk_Dockerfile
-test10.1/*
+bash_task/test10.1/*
 applicationHost.config
 
 # terraform
